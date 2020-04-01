@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Components/SideBar/sideBar.jsx';
-import Content from './Components/Content/content.jsx';
+//import Content from './Components/Content/content.jsx';
+import MoviesCards from './Components/moviesCards/moviesCards.jsx';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Sidebar />
-        <Content/>
+        <MoviesCards/>
       </div>
     </div>
   );

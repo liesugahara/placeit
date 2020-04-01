@@ -85,11 +85,7 @@ body {
 
 
 
-div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}
+
 
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -99,12 +95,12 @@ div.content {
     }
 
         .sidebar a {
-            float: left;
+            float: none;
         }
 
-    div.content {
-        margin-left: 0;
-    }
+
+
+ 
 }
 
 @media screen and (max-width: 400px) {
@@ -112,4 +108,10 @@ div.content {
         text-align: center;
         float: none;
     }
+
+    .logo {
+        font: 150 2em;
+    }
+
+   
 }

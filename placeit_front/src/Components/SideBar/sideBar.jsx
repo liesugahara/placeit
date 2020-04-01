@@ -23,7 +23,7 @@ const SideBar = () => {
 
         <div className="sidebar">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-            <h1 class="logo">
+            <h1 className="logo">
                 <a href="#"><span id="title">Place</span>It</a>
             </h1>
 

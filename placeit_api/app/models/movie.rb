@@ -1,6 +1,6 @@
 class Movie < ApplicationRecord
   has_many :bookings
-  validates :title, presence: true
+  validates :name, presence: true
   validates :description, presence: true, length: { minimum: 10, maximum: 300 }
   validates :photo_url, presence: true
   validates :start_date, presence: true
