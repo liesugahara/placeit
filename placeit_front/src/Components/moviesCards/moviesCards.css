@@ -1,6 +1,6 @@
-.content {
-    
+.movies-content {    
    
+   margin-left: 200px;
 }
 
 .movie-card {
@@ -24,9 +24,11 @@
     border-top-right-radius: 10px;
 }
 
-.manOfSteel {
-    background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg");
-    background-size: cover;
+.background-image {
+    /* background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg"); */
+    background-size: 100% 90% !important;
+    /* background-image    ; */
+    /* background-position: 100% 100%; */
 }
 
 .babyDriver {
@@ -51,24 +53,24 @@
 }
 
 .header-icon {
-    width: 100%;
-    height: 167px;
-    line-height: 167px;
-    text-align: center;
+    /* width: 100%;
+    height: 167px; */
+    /* line-height: 167px; */
+    /* text-align: center;
     vertical-align: middle;
-    margin: 0 auto;
-    color: #ffffff;
-    font-size: 54px;
-    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
-    opacity: .85;
+    margin: 0 auto; */
+    /* color: #ffffff;
+    font-size: 54px; */
+    /* text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA; */
+    opacity: 0;
 }
 
     .header-icon:hover {
-        background: rgba(0, 0, 0, 0.15);
-        font-size: 24px;
-        text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        /* background: rgba(0, 0, 0, 0.15);
+        font-size: 24px; */
+        /* text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA; */
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 10px; */
         opacity: 1;
     }
 
@@ -92,7 +94,7 @@
     font-size: 14px;
     margin: 0;
     display: table-cell;
-    
+    color: #0091ea;
 }
 
 .imax-logo {
@@ -136,7 +138,73 @@
         font-size: 11px;
     }
 
+    .button-row {
+        text-align: right;
+        margin-right: 50px;
+    }
 
+    button {
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 4px;
+        min-height: 1em;
+        -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        -webkit-tap-highlight-color: transparent;
+        border: 0;
+        background-image: none;
+    }
+
+       
+
+        button:disabled {
+            background-color: #c6c6c6 !important;
+            color: #FFF;
+            text-shadow: none;
+            -webkit-transition: background .2s;
+            transition: background .2s;
+            cursor:not-allowed;
+           
+        }
+
+        button.btn-reserve {
+            background-color: #3498db;
+            color: #FFF;
+            margin-top: 150px;
+        }
+
+        button.btn-new {
+            background-color: #3498db;
+            color: #FFF;
+            text-shadow: none;
+            -webkit-transition: background .2s;
+            transition: background .2s;
+            margin-top: 30px;
+        }
+
+    .selectDate{
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .date-row{
+        margin-left: 10px;
+    }
 
 @media screen and (max-width: 700px) {
 
@@ -153,6 +221,20 @@
         margin: 0;
         margin-left: 0px;
     }
+
+    .movies-content {    
+        margin-left: 0px;
+     }
+
+     .button-row{
+        width: 40%;
+        max-width: 40%;
+        margin: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 0px;
+        text-align: center;
+    }
 }
 
 
@@ -162,6 +244,8 @@
         width: 80%;
         max-width: 80%;
         margin: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
         display: block;
     }
 
@@ -169,5 +253,19 @@
         padding: 0;
         margin: 0;
         margin-left:0px;
+    }
+
+    .movies-content {    
+        margin-left: 0px;
+     }
+
+     .button-row{
+        width: 80%;
+        max-width: 80%;
+        margin: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        text-align: center;
     }
 }

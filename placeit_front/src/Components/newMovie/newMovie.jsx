@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+// import '../SideBar/sideBar.css';
+
+class NewMovie extends Component{
+  render(){
+    function call_button() {
+      var movie_params = newMovie()
+      {console.log(movie_params)}
+
+    }
+    return (
+      <div className="button-row">
+        <button onClick={ call_button} id="btn-new-movie" class = "button btn-new right">Crear Nueva Película</button>
+      </div>
+
+
+
+  )};
+}
+
+export default NewMovie;
