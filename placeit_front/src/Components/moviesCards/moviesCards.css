@@ -25,27 +25,8 @@
 }
 
 .background-image {
-    /* background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg"); */
     background-size: 100% 90% !important;
-    /* background-image    ; */
-    /* background-position: 100% 100%; */
-}
-
-.babyDriver {
-    background: url("http://i0.wp.com/media2.slashfilm.com/slashfilm/wp/wp-content/images/baby-driver-poster.jpg");
-    background-size: cover;
-}
-
-.theDarkTower {
-    background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
-    background-size: cover;
-    background-position: 100% 100%;
-}
-
-.bladeRunner2049 {
-    background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
-    background-size: cover;
-    background-position: 100% 80%;
+    background-repeat: no-repeat !important;
 }
 
 .header-icon-container {
@@ -189,7 +170,7 @@
         }
 
         button.btn-new {
-            background-color: #3498db;
+        background-color: #3498db;
             color: #FFF;
             text-shadow: none;
             -webkit-transition: background .2s;

@@ -1,11 +1,8 @@
 class Api::V1::MoviesController < ApplicationController
-
   def index
-    date = Date.strptime(params[:date], '%d-%m-%Y')
-
-    @movies = Movie.where("start_date <= ?", date).where("end_date >= ?", date)
+    @movies = Movie.all
     @movies.each do |movie|
-      movie.fully_booked == true if movie.is_fully_booked?(params[:reservation_date])
+      movie.is_fully_booked?
     end
     render json: @movies
   end
@@ -22,6 +19,13 @@ class Api::V1::MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id])
     render json: @movie
+  end
+
+  def movie_filter
+    start_date = Date.strptime(params[:start_date], '%d-%m-%Y')
+    end_date = Date.strptime(params[:end_date], '%d-%m-%Y')
+    @movies = Movie.where("start_date >= ?", start_date).where("end_date <= ?", end_date).all
+    render json: @movies
   end
 
   private

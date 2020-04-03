@@ -6,9 +6,15 @@ class Movie < ApplicationRecord
   validates :start_date, presence: true
   validates :end_date, presence: true
 
-  def is_fully_booked? reservation_date
-    bookings = Booking.where(movie_id: id).where(date: reservation_date).count
-    bookings == 10 
+  def is_fully_booked?
+    bookings = Booking.where(movie_id: id).where(created_at: Date.today..Date.tomorrow).count
+    if bookings >= 10 
+      update_attributes!(fully_booked: true)
+    else
+      update_attributes!(fully_booked: false)
+    end
+    save!
+    reload
   end
 
 end

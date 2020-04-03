@@ -10,7 +10,8 @@ class NewMovie extends Component{
     }
     return (
       <div className="button-row">
-        <button onClick={ call_button} id="btn-new-movie" class = "button btn-new right">Crear Nueva Película</button>
+        <button onClick={ call_button} id="btn-new-movie" class = "button btn-new right">
+          <span class="material-icons small valign">add</span>Crear Nueva Película</button>
       </div>
 
 

@@ -24,8 +24,8 @@ function newMovie (){
         '</form>',
         buttons: {
             formSubmit: {
-                text: 'Submit',
-                btnClass: 'btn-blue',
+                text: '<span class="material-icons small valign">add</span>Crear Nueva Película</button>',
+                btnClass: 'button btn-blue',
                 action: function () {
                     function validURL(str) {
                         var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
@@ -81,7 +81,6 @@ function newMovie (){
             this.$content.find('form').on('submit', function (e) {
                 // if the user submits the form by pressing enter in the field.
                 e.preventDefault();
-                console.log(newMovie)
                 jc.$$formSubmit.trigger('click'); // reference the button and click it
                 
             });
@@ -90,7 +89,6 @@ function newMovie (){
                 parentEl: '.jconfirm-row',
                 autoApply: true
             }, function(start, end, label) {
-                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
             });
         }
     });
